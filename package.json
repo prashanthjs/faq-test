@@ -1,11 +1,21 @@
 {
-  "name": "faq",
+  "name": "Wunderman_Thompson_Commerce_Test",
   "version": "0.1.0",
   "private": true,
+  "devDependencies": {
+    "redux-immutable-state-invariant": "^2.1.0",
+    "redux-logger": "^3.0.6"
+  },
   "dependencies": {
+    "bootstrap": "^4.3.1",
+    "prop-types": "^15.7.2",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
-    "react-scripts": "2.1.8"
+    "react-redux": "^7.0.2",
+    "react-scripts": "^2.1.8",
+    "react-router": "^5.0.0",
+    "redux": "^4.0.1",
+    "redux-saga": "^1.0.2"
   },
   "scripts": {
     "start": "react-scripts start",

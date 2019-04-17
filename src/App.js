@@ -1,26 +1,24 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
+import FaqListingContainer from './components/FaqListingContainer';
 import './App.css';
 
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
-      </div>
+        <div className='bg-light' data-test='App'>
+            <header>
+                <div className='navbar navbar-dark bg-dark box-shadow'>
+                    <div className='container d-flex justify-content-between'>
+                        <a href='/' className='navbar-brand d-flex align-items-center'>
+                            <strong>React Test</strong>
+                        </a>
+                    </div>
+                </div>
+            </header>
+            <div className='container mt-3'>
+                <FaqListingContainer data-test='FaqListingContainer'/>
+            </div>
+        </div>
     );
   }
 }
